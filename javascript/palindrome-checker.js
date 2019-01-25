@@ -1,12 +1,12 @@
 function palindrome(str) {
 
-    var reverseStr = ''
+    var reverseStr = '';
   
     //removes all non-alphanumeric characters
-    str = str.replace(/\W|_|,/g, "").toLowerCase()
+    str = str.replace(/\W|_|,/g, "").toLowerCase();
     
     //reverses the string
-    reverseStr = str.split("").reverse().join("")
+    reverseStr = str.split("").reverse().join("");
     
     //checks for palindrome
     return str === reverseStr;
