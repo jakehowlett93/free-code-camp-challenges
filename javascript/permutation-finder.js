@@ -1,5 +1,5 @@
 function permAlone(str) {
-//finds all the permutations of a string and counts how many contain no consecutive repeating characters
+//finds all the permutations of a string and counts how many contain no consecutive repeating characters1
     var arr = str.split('');
     var result = 0
   
@@ -13,9 +13,9 @@ function permAlone(str) {
     function permFinder(n) {
     //finds all the possible permutations
       var regex = /([a-z])\1+/;
-  
-      if (n === 1 && !regex.test(arr.join(''))) {
+      
       //counts all the permutations that have no consecutive repeating characters
+      if (n === 1 && !regex.test(arr.join(''))) {
         result++
   
       } else {
