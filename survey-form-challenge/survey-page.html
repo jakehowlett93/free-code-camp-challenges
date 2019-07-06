@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey-style.css">
+  </head>
+  <body>
+    <main id="main">
+      <form id="survey-form">
+        <header>
+          <h1 id="title" class="center">Music Survey Form</h1>
+        </header>
+        <article>
+          <section class="new-row">
+            <div class="labels">
+              <label id="name-label" for="name">Name*:</label>
+            </div>
+            <div class="right-tab">
+              <input id="name" type="text" placeholder="Name" required>
+            </div>
+          </section>
+          <section class="new-row">
+            <div class="labels">
+              <label id="email-label" for="email">Email*:</label>
+            </div>
+            <div class="right-tab">
+              <input id="email" type="email" placeholder="Email" required>
+            </div>
+          </section>
+          <section class="new-row">
+            <div class="labels">
+              <label id="number-label" for="number">Mobile Number:</label>
+            </div>
+            <div class="right-tab">
+              <input id="number" type="number" min="00000000001" max="99999999999" placeholder="Mobile Number">
+            </div>
+          </section>
+          <section class="new-row">
+            <div class="labels">
+              <label id="dropdown-label" for="dropdown">How often do you listen to music?</label>
+            </div>
+            <div class="right-tab">
+              <select id="dropdown" name="music-frequency">
+                <option value="daily">Daily</option>
+                <option value="otherday">Every other day</option>
+                <option value="morethan1">More than once a week</option>
+                <option value="lessthan1">Less than once a week</option>
+              </select>
+            </div>
+          </section>
+          <section class="new-row">
+            <fieldset>
+              <div class="labels" id="radio-label">
+                <label id="section-label" for="song-section">What is your favourite part of a song?</label>
+              </div>
+              <div class="right-tab" id="radio-right-tab">              
+                <ul style="list-style: none">
+                  <li><label><input type="radio" class="radio" value="beat" name="song-section">Beat</label></li>
+                  <li><label><input type="radio" class="radio" value="melody"  name="song-section">Melody</label></li>
+                  <li><label><input type="radio" value="lyrics" name="song-section">Lyrics</label></li>
+                </ul>
+              </div>
+            </fieldset>
+          </section>
+          <section class="new-row">
+            <fieldset>
+              <div class="labels" id="check-label">
+                <label id="genre-label" for="genre">What genres do you enjoy?</label>
+              </div>
+              <div class="right-tab" id="check-right-tab">
+                <ul style="list-style: none">
+                  <li><label><input type="checkbox" value="pop" name="genre">Pop</label></li>
+                  <li><label><input type="checkbox" value="hiphop" name="genre">Hip-hop</label></li>
+                  <li><label><input type="checkbox" value="rock" name="genre">Rock</label></li>
+                  <li><label><input type="checkbox" value="classic" name="genre">Classic</label></li>
+                  <li><label><input type="checkbox" value="country" name="genre">Country</label></li>
+              </div>
+            </fieldset>
+          </section>
+          <section class="new-row">
+            <div class="labels" id="textarea-label">
+              <label id="artist-label" for="artist"> Who are your favourite artists</label>
+            </div>
+            <div class="right-tab">
+              <textarea rows="3" cols="30" placeholder="Kanye, Brockhampton, Etc..."></textarea>
+            </div>
+          </section>
+          <section class="new-row">
+            <div id="submit-button">
+              <button id="submit" type="submit" accesskey="s">Submit form</button>
+            </div>
+          </section>
+        </article>
+      </form>
+    </main>
+  </body>
+</html>

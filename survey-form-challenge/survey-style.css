@@ -1,0 +1,86 @@
+body {
+    background: url("https://previews.123rf.com/images/relato/relato1607/relato160700014/60393255-vector-illustration-of-a-musical-note-background.jpg");
+  }
+
+fieldset {
+    border: 0;
+}
+  
+.center {
+text-align: center;
+}
+
+.labels {
+display: inline-block;
+width: 47%;
+text-align: right;
+}
+
+.new-row {}
+
+.right-tab {
+display: inline-block;
+text-align: left;
+width: 47%;
+padding-left: 45px;
+padding-top: 20px;
+}
+
+#title {
+padding-bottom: 20px;
+}
+
+#survey-form {
+background: white;
+width: 50%;
+margin: auto;
+border-style: solid;
+padding-top: 10px;
+}
+
+#section-label {
+padding-top: 5px
+}
+
+#radio-label {
+vertical-align: top;
+padding-top: 35px
+}
+
+#genre-label {
+display: block;
+padding-top: 17px;
+padding-left: 30px
+}
+
+#check-label {
+vertical-align: top;
+padding-top: 0px
+}
+
+#radio-right-tab {
+padding-left: 0px;
+padding-top: 20px;
+}
+
+#check-right-tab {
+padding-left: 0px;
+padding-top: 0px;
+}
+
+#textarea-label {
+vertical-align: top;
+padding-top: 20px
+}
+
+#submit-button {
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+#submit {
+width: 150px;
+height: 30px;
+margin: auto;
+display: block;
+}

@@ -1,36 +1,39 @@
+body {
+  background: url("https://i.imgur.com/MJAkxbh.png");
+}
+
 #title {
-    text-align: center;
-    font-size: 60px;
+  text-align: center;
+  font-size: 60px;
   }  
   
-  #img-div {
-    background: white;
-    padding-top: 50px;
-    margin: 0;
-    text-align: center;
-  }
-  
-  #img-caption {
-    text-align: center;
-  }
-  
-  #tribute-info {
-    padding-top: 20px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45%;
-  }
-  
-  .larger-image {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    }
-  
-  a:hover {
-    color: blue;
-  }
+#img-div {
+  padding-top: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+#img-caption {
+  text-align: center;
+}
+
+#tribute-info {
+  padding-top: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+.larger-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+a:hover {
+  color: blue;
+}
