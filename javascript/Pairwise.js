@@ -1,7 +1,7 @@
 function pairwise(arr, arg) {
     //finds element pairs whose sum equal the second argument and returns the sum of their indices
-    var count = 1;
-    var pairIndices = [0]
+    let count = 1;
+    let pairIndices = [0]
   
   
     for (let i = 0; i < arr.length-1; i++) {
@@ -15,8 +15,8 @@ function pairwise(arr, arg) {
       }
       count++;
     }
-    var reducer = (accumulator, currentValue) => accumulator + currentValue;
-    var totalIndex = pairIndices.reduce(reducer);
+    let reducer = (accumulator, currentValue) => accumulator + currentValue;
+    let totalIndex = pairIndices.reduce(reducer);
   
     return totalIndex;
   }
