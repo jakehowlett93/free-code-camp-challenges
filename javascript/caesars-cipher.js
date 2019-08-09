@@ -1,23 +1,29 @@
-function rot13(str) {
-  
-  let arrayStr = str.split(""), asciiValue, codedLetter;
+function findDiff(arrOne, arrTwo) {
+//finds the symmetrical difference between two arrays
+  let difference = [];
 
-//convert letters to ascii
- arrayStr.forEach((value, index, arr) => {
-    asciiValue = str.charCodeAt(index);
-    //encodes the letters
-    if (asciiValue >= 65 && asciiValue <= 90) {
-      asciiValue += 13;
-      //loops round the alphabet
-      if (asciiValue > 90) {
-        asciiValue -= 26;
-      }
+  arrOne.forEach((element, index) => {
+    if (!arrTwo.includes(arrOne[index]) && !difference.includes(arrOne[index])) {
+      difference.push(arrOne[index]);
     }
-    //replaces letters in the array
-    codedLetter = String.fromCharCode(asciiValue);
-    arrayStr.splice(index, 1, codedLetter);
-
   });
 
-  return arrayStr.join("");
+  arrTwo.forEach((element, index) => {
+    if (!arrOne.includes(arrTwo[index]) && !difference.includes(arrTwo[index])) {
+      difference.push(arrTwo[index]);
+    }
+  });
+
+  difference.sort((a, b) => a - b);
+  return difference;
 }
+
+function sym(args) {
+//finds the symmetrical difference between a series of arrays
+
+  args = Array.prototype.slice.call(arguments);
+
+  return args.reduce(findDiff);
+}
+
+sym([1, 2, 3], [5, 2, 1, 4]);

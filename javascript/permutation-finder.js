@@ -1,11 +1,11 @@
 function permAlone(str) {
 //finds all the permutations of a string and counts how many contain no consecutive repeating characters1
-    var arr = str.split('');
-    var result = 0
+    let arr = str.split('');
+    let result = 0
   
     function switchChar(a, b) {
     //swaps characters at indexes a and b in the array
-    var tmp = arr[a];
+    let tmp = arr[a];
     arr[a] = arr[b];
     arr[b] = tmp; 
     }
@@ -19,7 +19,7 @@ function permAlone(str) {
         result++
   
       } else {
-        for (var i = 0; i < n; i++) {
+        for (let i = 0; i < n; i++) {
           permFinder(n - 1);
   
           if (n % 2) {

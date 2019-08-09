@@ -1,5 +1,5 @@
 function pairwise(arr, arg) {
-    //finds element pairs whose sum equal the second argument and returns the sum of their indices
+    //finds element pairs that sum equal the second argument and returns the sum of their indices
     let count = 1;
     let pairIndices = [0]
   

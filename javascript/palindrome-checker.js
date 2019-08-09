@@ -1,6 +1,6 @@
 function palindrome(str) {
 
-    var reverseStr = '';
+    let reverseStr = '';
   
     //removes all non-alphanumeric characters
     str = str.replace(/\W|_|,/g, "").toLowerCase();
