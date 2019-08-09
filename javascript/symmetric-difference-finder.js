@@ -1,25 +1,25 @@
 function findDiff(arrOne, arrTwo) {
   //finds the symmetrical difference between two arrays
-    var difference = [];
+    let difference = [];
 
-    for (let i = 0; i < arrOne.length; i++) {
-      if (!arrTwo.includes(arrOne[i]) && !difference.includes(arrOne[i])) {
-        difference.push(arrOne[i]);
+    arrOne.forEach((element, index) => {
+      if (!arrTwo.includes(arrOne[index]) && !difference.includes(arrOne[index])) {
+        difference.push(arrOne[index]);
       }
-    }
+    });
 
-    for (let i = 0; i < arrTwo.length; i++) {
-      if (!arrOne.includes(arrTwo[i]) && !difference.includes(arrTwo[i])) {
-        difference.push(arrTwo[i]);
+    arrTwo.forEach((element, index) => {
+      if (!arrOne.includes(arrTwo[index]) && !difference.includes(arrTwo[index])) {
+        difference.push(arrTwo[index]);
       }
-    }
+    });
 
-    difference.sort((arrOne, arrTwo) => arrOne - arrTwo);
+    difference.sort((a, b) => a - b);
     return difference;
   }
 
 function sym(args) {
-//finds the symmetrical difference between arrOne series of arrays
+//finds the symmetrical difference between a series of arrays
 
   args = Array.prototype.slice.call(arguments);
 
